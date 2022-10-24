@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cates",
+  "info": {
+    "singularName": "cate",
+    "pluralName": "cates",
+    "displayName": "Cate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "filterOptions": {
+      "type": "json",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "cate"
+    }
+  }
+}

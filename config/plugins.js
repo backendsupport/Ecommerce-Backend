@@ -1,0 +1,12 @@
+module.exports=()=>(
+    {email:{
+    provider:'sendGrid',
+    providerOptions:{
+    apiKey:'sjjdjiewi238283bsxjajs'
+    },
+    settings:{
+        defaultFrom:'varx4coder@gmail.com',
+        defaultTo:'varx4coder@gmail.com'
+    }
+    }}
+)

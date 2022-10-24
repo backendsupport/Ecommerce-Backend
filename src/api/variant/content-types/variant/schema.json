@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variants",
+  "info": {
+    "singularName": "variant",
+    "pluralName": "variants",
+    "displayName": "variant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "size": {
+      "type": "string"
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "#FFF",
+        "#2A363B",
+        "#99B898",
+        "#ADD8E6",
+        "#FECEA8",
+        "#E84A5F"
+      ],
+      "required": true
+    },
+    "qty": {
+      "type": "integer",
+      "required": true
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "variants"
+    },
+    "Promo": {
+      "type": "boolean"
+    },
+    "Featured": {
+      "type": "boolean"
+    },
+    "Color_label": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "white",
+        "red",
+        "light_blue",
+        "tan",
+        "green"
+      ]
+    },
+    "Rating": {
+      "type": "decimal",
+      "min": 0,
+      "max": 5
+    }
+  }
+}
