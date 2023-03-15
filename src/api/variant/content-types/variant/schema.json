@@ -18,9 +18,8 @@
     "Color": {
       "type": "enumeration",
       "enum": [
-        "#FFF",
-        "#2A363B",
-        "#99B898",
+        "#FFF", 
+     
         "#ADD8E6",
         "#FECEA8",
         "#E84A5F"
