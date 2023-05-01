@@ -15,11 +15,11 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST', 'dpg-cg70o8g2qv28u2r1k2dg-a.singapore-postgres.render.com'),  
+      host: env('DATABASE_HOST', 'dpg-ch7sn7msi8uhth2tialg-a.singapore-postgres.render.com'),  
       port: env.int('DATABASE_PORT', 5432),
-      database: env('DATABASE_NAME', 'myshop_flml'),
-      user: env('DATABASE_USERNAME', 'myshop_flml_user'),
-      password: env('DATABASE_PASSWORD', '3N3Zqks97l7rvSNov3sVtFcKdMc8BHzy'),
+      database: env('DATABASE_NAME', 'ecommerce_database_upjt'),
+      user: env('DATABASE_USERNAME', 'ecommerce_database_upjt_user'),
+      password: env('DATABASE_PASSWORD', 'uga0sCM9f9KVdSCjv2fpuET0VM8cvxYU'),
       ssl: env.bool('DATABASE_SSL', true),
     },
   },
